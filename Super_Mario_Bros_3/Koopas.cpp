@@ -36,6 +36,7 @@ void CKoopas::OnCollisionWith(LPCOLLISIONEVENT e)
 {
 	if (!e->obj->IsBlocking()) return;
 	if (dynamic_cast<CKoopas*>(e->obj)) return;
+
 	if (e->ny != 0)
 	{
 		vy = 0;

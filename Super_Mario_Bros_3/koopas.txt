@@ -5,7 +5,7 @@
 61002	27	129	44	156	10
 
 #SHELL
-62001	49	138	66	30	10
+62001	47	138	66	155	10
 
 # ani_id	sprite1_id	time1	sprite2_id	time2	...
 [ANIMATIONS]
