@@ -97,7 +97,6 @@ void CKoopas::SetState(int state)
 			break;
 		case KOOPAS_STATE_SHELL:
 			shell_start = GetTickCount64();
-			y += (KOOPAS_BBOX_HEIGHT - KOOPAS_BBOX_HEIGHT_SHELL) / 2.0f;
 			vx = 0;
 			break;
 		case KOOPAS_STATE_SHELL_MOVING_RIGHT:
