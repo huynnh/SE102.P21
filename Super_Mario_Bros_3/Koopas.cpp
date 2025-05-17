@@ -100,10 +100,10 @@ void CKoopas::SetState(int state)
 			vx = 0;
 			break;
 		case KOOPAS_STATE_SHELL_MOVING_RIGHT:
-			vx = KOOPAS_WALKING_SPEED * 2;
+			vx = KOOPAS_WALKING_SPEED * 3;
 			break;
 		case KOOPAS_STATE_SHELL_MOVING_LEFT:
-			vx = -KOOPAS_WALKING_SPEED * 2;
+			vx = -KOOPAS_WALKING_SPEED * 3;
 			break;
 	}
 }

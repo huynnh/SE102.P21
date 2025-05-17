@@ -135,7 +135,7 @@ void CMario::OnCollisionWithKoopas(LPCOLLISIONEVENT e)
 		}
 		
 		if (e->ny < 0) {
-			if (GetState() == MARIO_STATE_RUNNING_RIGHT || GetState() == MARIO_STATE_WALKING_RIGHT)
+			if (GetState() == MARIO_STATE_RUNNING_RIGHT || GetState() == MARIO_STATE_WALKING_RIGHT || GetState() == MARIO_STATE_IDLE)
 			{
 				koopas->SetState(KOOPAS_STATE_SHELL_MOVING_RIGHT);
 				vy = -MARIO_JUMP_DEFLECT_SPEED;
