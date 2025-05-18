@@ -15,18 +15,22 @@ koopas.txt
 # MARIO
 0	20	10
 
-#COIN
+# BRICKS
+1	112	140
+1	128	140
+
+# COIN
 4	100	150
 4	120	150
 4	140	150
 4	160	150
 4	180	150
 
-#Goomba
+# Goomba
 2	300	10
 
-#Koopas
+# Koopas
 3 	200	10
 
-#Platform
+# Platform
 5	0	200	16	16	20	51000	52000	53000
