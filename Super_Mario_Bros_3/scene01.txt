@@ -1,7 +1,8 @@
 # list of object assets to load in this scene
 [ASSETS]
 mario.txt
-brick.txt
+# brick.txt
+block.txt
 coin.txt
 goomba.txt
 platform.txt
@@ -15,22 +16,15 @@ koopas.txt
 # MARIO
 0	20	10
 
-# BRICKS
-1	112	140
-1	128	140
+# BLOCKS
+6	150	120
+6	166	120
 
-# COIN
-4	100	150
-4	120	150
-4	140	150
-4	160	150
-4	180	150
+6	200	80
+6	216	80
 
-# Goomba
-2	300	10
-
-# Koopas
-3 	200	10
+#Goomba
+2	180	160
 
 # Platform
-5	0	200	16	16	20	51000	52000	53000
+5	0	175	16	16	50	51000	52000	53000
