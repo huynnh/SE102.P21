@@ -134,7 +134,7 @@
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Animations.cpp" />
-    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="QuestionBlock.cpp" />
     <ClCompile Include="Brick.cpp" />
     <ClCompile Include="Coin.cpp" />
     <ClCompile Include="Collision.cpp" />
@@ -160,7 +160,7 @@
     <ClInclude Include="AnimationFrame.h" />
     <ClInclude Include="Animations.h" />
     <ClInclude Include="AssetIDs.h" />
-    <ClInclude Include="Block.h" />
+    <ClInclude Include="QuestionBlock.h" />
     <ClInclude Include="Brick.h" />
     <ClInclude Include="Coin.h" />
     <ClInclude Include="Collision.h" />
@@ -183,7 +183,7 @@
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="block.txt" />
+    <Text Include="question-block.txt" />
     <Text Include="brick.txt" />
     <Text Include="platform.txt" />
     <Text Include="coin.txt" />

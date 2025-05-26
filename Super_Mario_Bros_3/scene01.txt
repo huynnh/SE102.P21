@@ -2,7 +2,7 @@
 [ASSETS]
 mario.txt
 # brick.txt
-block.txt
+question-block.txt
 coin.txt
 goomba.txt
 platform.txt
