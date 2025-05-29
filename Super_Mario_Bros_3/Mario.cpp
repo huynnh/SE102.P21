@@ -8,6 +8,7 @@
 #include "Koopas.h"
 #include "Coin.h"
 #include "Portal.h"
+#include "QuestionBox.h"
 
 #include "Collision.h"
 
@@ -56,6 +57,8 @@ void CMario::OnCollisionWith(LPCOLLISIONEVENT e)
 		OnCollisionWithPortal(e);
 	else if (dynamic_cast<CKoopas*>(e->obj))
 		OnCollisionWithKoopas(e);
+	else if (dynamic_cast<CQuestionBox*>(e->obj))
+		OnCollisionWithQuestionBox(e);
 }
 
 void CMario::OnCollisionWithGoomba(LPCOLLISIONEVENT e)
@@ -88,6 +91,21 @@ void CMario::OnCollisionWithGoomba(LPCOLLISIONEVENT e)
 					SetState(MARIO_STATE_DIE);
 				}
 			}
+		}
+	}
+}
+
+void CMario::OnCollisionWithQuestionBox(LPCOLLISIONEVENT e)
+{
+	CQuestionBox *box = dynamic_cast<CQuestionBox*>(e->obj);
+	float mx, my;
+	box->GetPosition(mx, my);
+	if (e->ny > 0) 
+	{
+		if (box->GetState() != ID_ANI_QUESTION_BOX_CLOSE)
+		{
+			box->SetState(ID_ANI_QUESTION_BOX_CLOSE);
+			box->StartBounce();
 		}
 	}
 }

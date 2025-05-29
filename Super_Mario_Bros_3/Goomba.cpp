@@ -28,8 +28,8 @@ void CGoomba::GetBoundingBox(float &left, float &top, float &right, float &botto
 
 void CGoomba::OnNoCollision(DWORD dt)
 {
-	x += vx * dt;
-	y += vy * dt;
+	/*x += vx * dt;
+	y += vy * dt;*/
 };
 
 void CGoomba::OnCollisionWith(LPCOLLISIONEVENT e)
