@@ -81,7 +81,7 @@
     <ClCompile Include="Koopas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="QuestionBlock.cpp">
+    <ClCompile Include="QuestionBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -158,7 +158,7 @@
     <ClInclude Include="Koopas.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="QuestionBlock.h">
+    <ClInclude Include="QuestionBox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -173,7 +173,7 @@
     <Text Include="scene02.txt" />
     <Text Include="scene0005.txt" />
     <Text Include="koopas.txt" />
-    <Text Include="question-block.txt" />
+    <Text Include="question-box.txt" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="mario.ico">
