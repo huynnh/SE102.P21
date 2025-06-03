@@ -134,6 +134,7 @@
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Animations.cpp" />
+    <ClCompile Include="Background.cpp" />
     <ClCompile Include="QuestionBox.cpp" />
     <ClCompile Include="Brick.cpp" />
     <ClCompile Include="Coin.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="AnimationFrame.h" />
     <ClInclude Include="Animations.h" />
     <ClInclude Include="AssetIDs.h" />
+    <ClInclude Include="Background.h" />
     <ClInclude Include="QuestionBox.h" />
     <ClInclude Include="Brick.h" />
     <ClInclude Include="Coin.h" />
@@ -183,6 +185,7 @@
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="background.txt" />
     <Text Include="question-box.txt" />
     <Text Include="brick.txt" />
     <Text Include="platform.txt" />
