@@ -9,6 +9,7 @@
 #include "Portal.h"
 #include "Coin.h"
 #include "QuestionBox.h"
+#include "ColorBox.h"
 #include "Platform.h"
 
 #include "SampleKeyEventHandler.h"
@@ -120,6 +121,13 @@ void CPlayScene::_ParseSection_OBJECTS(string line)
 	case OBJECT_TYPE_GOOMBA: obj = new CGoomba(x,y); break;
 	case OBJECT_TYPE_BRICK: obj = new CBrick(x,y); break;
 	case OBJECT_TYPE_QUESTION_BOX: obj = new CQuestionBox(x,y); break;
+	case OBJECT_TYPE_COLOR_BOX:
+	{
+		int spriteWidth = atoi(tokens[3].c_str());
+		int spriteHeight = atoi(tokens[4].c_str());
+		int spriteId = atoi(tokens[5].c_str());
+		obj = new CColorBox(x, y, spriteWidth, spriteHeight, spriteId);
+	}; break;
 	case OBJECT_TYPE_COIN: obj = new CCoin(x,y); break;
 	case OBJECT_TYPE_KOOPAS: obj = new CKoopas(x,y); break;
 

@@ -3,6 +3,7 @@
 mario.txt
 # brick.txt
 question-box.txt
+colorbox.txt
 coin.txt
 goomba.txt
 platform.txt
@@ -16,15 +17,20 @@ koopas.txt
 # MARIO
 0	20	10
 
-# BLOCKS
-6	150	130
-6	166	130
+# QUESTION BOX
+6	155	130
+6	171	130
 
-6	186	90
-6	202	90
+6	191	90
+6	207	90
 
 #Goomba
 2	180	160
+
+#Box color
+#type	x	y	width	height
+7	264	164	48	48	70000
+7	300	148	56	80	70001
 
 # Platform
 5	0	195	16	15	28	51000	52000	53000

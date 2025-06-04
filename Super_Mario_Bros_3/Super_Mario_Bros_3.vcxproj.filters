@@ -84,6 +84,9 @@
     <ClCompile Include="QuestionBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ColorBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h">
@@ -161,6 +164,9 @@
     <ClInclude Include="QuestionBox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ColorBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="brick.txt" />
@@ -175,6 +181,7 @@
     <Text Include="koopas.txt" />
     <Text Include="question-box.txt" />
     <Text Include="background.txt" />
+    <Text Include="colorbox.txt" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="mario.ico">
