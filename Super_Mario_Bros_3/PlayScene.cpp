@@ -10,6 +10,7 @@
 #include "Coin.h"
 #include "QuestionBox.h"
 #include "ColorBox.h"
+#include "Background.h"
 #include "Platform.h"
 
 #include "SampleKeyEventHandler.h"
@@ -115,7 +116,7 @@ void CPlayScene::_ParseSection_OBJECTS(string line)
 		}
 		obj = new CMario(x,y); 
 		player = (CMario*)obj;  
-
+		player->SetPosition(x, y);
 		DebugOut(L"[INFO] Player object has been created!\n");
 		break;
 	case OBJECT_TYPE_GOOMBA: obj = new CGoomba(x,y); break;
@@ -127,6 +128,13 @@ void CPlayScene::_ParseSection_OBJECTS(string line)
 		int spriteHeight = atoi(tokens[4].c_str());
 		int spriteId = atoi(tokens[5].c_str());
 		obj = new CColorBox(x, y, spriteWidth, spriteHeight, spriteId);
+	}; break;
+	case OBJECT_TYPE_BACKGROUND: {
+
+		int spriteWidth = atoi(tokens[3].c_str());
+		int spriteHeight = atoi(tokens[4].c_str());
+		int spriteId = atoi(tokens[5].c_str());
+		obj = new CBackground(x, y, spriteWidth, spriteHeight, spriteId);
 	}; break;
 	case OBJECT_TYPE_COIN: obj = new CCoin(x,y); break;
 	case OBJECT_TYPE_KOOPAS: obj = new CKoopas(x,y); break;

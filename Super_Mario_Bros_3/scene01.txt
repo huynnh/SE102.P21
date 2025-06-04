@@ -2,6 +2,7 @@
 [ASSETS]
 mario.txt
 # brick.txt
+background.txt
 question-box.txt
 colorbox.txt
 coin.txt
@@ -14,26 +15,30 @@ koopas.txt
 # type: 0 = Mario , 1 = Brick, 2 = Goomba, 3 = Koopas
 # See OBJECT_TYPE constants in AssetIDs.h
 
-# MARIO
-0	20	10
-
-# QUESTION BOX
-6	155	130
-6	171	130
-
-6	191	90
-6	207	90
-
-#Goomba
-2	180	160
+#Obj background start
+8	79	157	128	64	200000
 
 #Box color
 #type	x	y	width	height
-7	264	164	48	48	70000
-7	300	148	56	80	70001
+7	264	163	48	48	70000
+7	300	147	56	80	70001
+
+7	439	163	80	48	71000
+7	563	171	104	32	71001
+7	495	147	64	80	71002
+7	547	131	72	112	71003
 
 # Platform
-5	0	195	16	15	28	51000	52000	53000
-5	448	180	16	15	28	51000	52000	53000
-5	448	194	16	15	28	51001	52001	53001
+5	0	195	16	15	40	51000	52000	53000
+5	640	180	16	15	28	51000	52000	53000
+5	640	194	16	15	28	51001	52001	53001
 
+# QUESTION BOX
+6	184	130
+6	200	130
+
+6	234	85
+6	250	85
+
+# MARIO
+0	20	10
