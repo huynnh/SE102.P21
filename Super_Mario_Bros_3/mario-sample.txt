@@ -19,3 +19,4 @@ height	240
 20	textures\misc_transparent.png
 30	textures\background.png
 40	textures\sprite_1.png
+50	textures\eniemies_2.png
