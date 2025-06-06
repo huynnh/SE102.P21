@@ -11,6 +11,7 @@
 #include "QuestionBox.h"
 #include "ColorBox.h"
 #include "Background.h"
+#include "Pipe.h"
 #include "Platform.h"
 
 #include "SampleKeyEventHandler.h"
@@ -135,6 +136,13 @@ void CPlayScene::_ParseSection_OBJECTS(string line)
 		int spriteHeight = atoi(tokens[4].c_str());
 		int spriteId = atoi(tokens[5].c_str());
 		obj = new CBackground(x, y, spriteWidth, spriteHeight, spriteId);
+	}; break;
+	case OBJECT_TYPE_PIPE: {
+		int spriteWidth = atoi(tokens[3].c_str());
+		int spriteHeight = atoi(tokens[4].c_str());
+		int spriteId = atoi(tokens[5].c_str());
+
+		obj = new CPipe(x, y, spriteWidth, spriteHeight, spriteId);
 	}; break;
 	case OBJECT_TYPE_COIN: obj = new CCoin(x,y); break;
 	case OBJECT_TYPE_KOOPAS: obj = new CKoopas(x,y); break;

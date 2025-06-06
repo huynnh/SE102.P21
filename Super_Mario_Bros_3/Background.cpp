@@ -6,7 +6,4 @@ void CBackground::Render()
 	s->Get(this->spriteId)->Draw(x, y);
 }
 
-void CBackground::GetBoundingBox(float& l, float& t, float& r, float& b)
-{
-
-}
+void CBackground::GetBoundingBox(float& l, float& t, float& r, float& b){}
